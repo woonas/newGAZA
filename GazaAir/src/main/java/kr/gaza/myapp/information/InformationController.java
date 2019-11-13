@@ -104,4 +104,14 @@ public class InformationController {
 	public String withpets() {
 		return "JSP/serviceinfo/info_with_pets";
 	}
+	
+	@RequestMapping("/JSP/serviceinfo/baggage_guide")
+	public String baggageguide() {
+		return "JSP/serviceinfo/info_baggage_guide";
+	}
+	
+	@RequestMapping("/JSP/serviceinfo/baggage_free")
+	public String baggagefree() {
+		return "JSP/serviceinfo/info_baggage_free";
+	}
 }

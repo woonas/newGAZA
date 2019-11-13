@@ -499,3 +499,17 @@
 /* ----------------------------------------------- */
 
 .banner-pet-1 { background-image: url(../IMG/information/withpet.png); }
+
+/* ----------------------------------------------- */
+/* 수하물 안내 info_with_pet.jsp */
+/* ----------------------------------------------- */
+
+.banner-baggage-1 { background-image: url(../IMG/information/baggage.png); }
+
+/* ----------------------------------------------- */
+/* 무료 수하물 안내 info_with_pet.jsp */
+/* ----------------------------------------------- */
+
+.banner-baggagefree-1 { background-image: url(../IMG/information/baggagefree.png); }
+.banner-baggagefree-2 { background-image: url(../IMG/information/baggagefree.png); }
+.banner-baggagefree-3 { background-image: url(../IMG/information/baggagefree.png); }
