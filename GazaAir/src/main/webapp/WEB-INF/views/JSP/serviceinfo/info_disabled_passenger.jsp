@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>장애인 고객</title>
-        <link rel="stylesheet" href="../../CSS/information.css">
+        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>
@@ -76,6 +76,6 @@
             </div>
 	</section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="../../JS/information.js"></script>
+        <script src="<%=path %>/ResourcesJS/information.js"></script>
     </body>
 </html>

@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>운임안내</title>
-        <link rel="stylesheet" href="../../CSS/information.css">
+        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>
@@ -275,7 +275,6 @@
             </div>
         </section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="../../JS/common.js"></script>
-        <script src="../../JS/information.js"></script>
+        <script src="<%=path %>/Resources/JS/information.js"></script>
     </body>
 </html>
