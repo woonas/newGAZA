@@ -14,7 +14,7 @@
         <section class="content">
             <h3>반려동물 동반</h3>
             <div class="info-banner">
-                    <div class="banner-fare-2">
+                    <div class="banner-pet-1">
                         <div>
                             <p>반려동물과 함께 항공여행 계획 중인 고객께서는 신청방법,<br/>반려동물 가이드를 사전에 꼭 확인해 주시기 바랍니다. </p>
                         </div>

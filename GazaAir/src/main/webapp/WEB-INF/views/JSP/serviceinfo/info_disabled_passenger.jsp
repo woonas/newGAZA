@@ -14,7 +14,7 @@
         <section class="content">
             <h3>장애인 고객</h3>
             <div class="info-banner">
-                    <div class="banner-fare-2">
+                    <div class="banner-disabled-1">
                         <div>
                             <p>아시아나항공에서는 신체적, 건강상의 이유로 몸이 불편하여<br/>혼자 여행하기 어려운 고객께서 항공여행과 활동에 불편이 없도록<br/>다양한 서비스를 제공해 드립니다 </p>
                         </div>

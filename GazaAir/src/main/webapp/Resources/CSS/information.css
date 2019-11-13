@@ -459,3 +459,43 @@
     border-color: #67a !important;
 }
 
+/* ----------------------------------------------- */
+/* 장애인 안내 info_disabled_passenger.jsp */
+/* ----------------------------------------------- */
+
+.banner-disabled-1 { background-image: url(../IMG/information/disabled.png); }
+
+
+/* ----------------------------------------------- */
+/* 패밀리서비스 안내 info_family_service.jsp */
+/* ----------------------------------------------- */
+
+.banner-family-1 { background-image: url(../IMG/information/family.png); }
+
+
+/* ----------------------------------------------- */
+/* 유아여행 안내 info_infant.jsp */
+/* ----------------------------------------------- */
+
+.banner-infant-1 { background-image: url(../IMG/information/infant.png); }
+.banner-infant-2 { background-image: url(../IMG/information/infant2.png); }
+
+/* ----------------------------------------------- */
+/* 의료지원 안내 info_medical.jsp */
+/* ----------------------------------------------- */
+
+.banner-medical-1 { background-image: url(../IMG/information/medical.png); }
+.banner-medical-2 { background-image: url(../IMG/information/medical2.png); }
+
+
+/* ----------------------------------------------- */
+/* 임신중여행 안내 info_pregnant.jsp */
+/* ----------------------------------------------- */
+
+.banner-pregnant-1 { background-image: url(../IMG/information/pregnancy.png); }
+
+/* ----------------------------------------------- */
+/* 반려동물동반 안내 info_with_pet.jsp */
+/* ----------------------------------------------- */
+
+.banner-pet-1 { background-image: url(../IMG/information/withpet.png); }

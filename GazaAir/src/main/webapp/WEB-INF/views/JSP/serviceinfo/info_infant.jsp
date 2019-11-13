@@ -23,7 +23,7 @@
 
             <div id="tab-1-container">
                 <div class="info-banner">
-                    <div class="banner-fare-1">
+                    <div class="banner-infant-1">
                         <div>
                             <p>유아를 동반할 때, 안심하고 여행하실 수 있도록 안내 드립니다.<br/>
                            	생후 7일 ~ 만 2세 미만 유아를 동반하는 항공 여행을 준비하실 때는<br/>아래 내용을 확인해 주시기 바랍니다. </p>
@@ -50,7 +50,7 @@
             	
             <div id="tab-2-container"  class="hidden">
                 <div class="info-banner">
-                    <div class="banner-fare-2">
+                    <div class="banner-infant-2">
                         <div>
                             <p>유아를 동반하여 혼자 여행하시는 여성 고객님께서도<br/>편안하고 행복한 여행이 될 수 있도록 해피맘 서비스를 제공합니다 </p>
                         </div>

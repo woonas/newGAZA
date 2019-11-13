@@ -14,7 +14,7 @@
         <section class="content">
             <h3>패밀리 서비스</h3>
             <div class="info-banner">
-                    <div class="banner-fare-2">
+                    <div class="banner-family-1">
                         <div>
                             <p>7세 미만의 유아나 소아를 2명 이상 동반한 1인 손님,<br/>보호자 없이 여행하는 만 70세 이상의 노약자 손님은<br/>누구나 이용하실 수 있습니다.  </p>
                         </div>

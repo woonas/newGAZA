@@ -68,6 +68,11 @@ const chatService = () => {
 
        else if (location.pathname.indexOf('fare') !== -1) {
            tabEvent('.tab-menu1');
+       }else if (location.pathname.indexOf('infant') !== -1) {
+           tabEvent('.tab-menu1');
+       }else if (location.pathname.indexOf('medical') !== -1) {
+           tabEvent('.tab-menu1');
        }
+       
    }
 })();

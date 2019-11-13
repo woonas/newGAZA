@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: gyzz
-  Date: 11/8/19
-  Time: 20:35
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
@@ -43,7 +36,7 @@
                             <div class="number-wrapper">01</div>
                             <p>[OZ Wi-Fi] 선택</p>
                             <br>
-                            <img src="../../IMG/information/wifi/img_cabin_wifi_01.png" alt="">
+                            <img src="<%=path%>/Resources/IMG/information/wifi/img_cabin_wifi_01.png" alt="">
                             <br>
                             <br>
                             <div>
@@ -57,7 +50,7 @@
                             <div class="number-wrapper">02</div>
                             <p>웹브라우저 실행</p>
                             <br>
-                            <img src="../../IMG/information/wifi/img_cabin_wifi_02.png" alt="">
+                            <img src="<%=path%>/Resources/IMG/information/wifi/img_cabin_wifi_02.png" alt="">
                             <br>
                             <br>
                             <div>
@@ -71,7 +64,7 @@
                             <div class="number-wrapper">03</div>
                             <p>[go online] 버튼 클릭</p>
                             <br>
-                            <img src="../../IMG/information/wifi/img_cabin_wifi_03.png" alt="">
+                            <img src="<%=path%>/Resources/IMG/information/wifi/img_cabin_wifi_03.png" alt="">
                             <br>
                             <br>
                             <div>
@@ -87,7 +80,7 @@
                             <div class="number-wrapper">04</div>
                             <p>요금제 선택</p>
                             <br>
-                            <img src="../../IMG/information/wifi/img_cabin_wifi_04.png" alt="">
+                            <img src="<%=path%>/Resources/IMG/information/wifi/img_cabin_wifi_04.png" alt="">
                             <br>
                             <br>
                             <div>
@@ -100,7 +93,7 @@
                             <div class="number-wrapper">05</div>
                             <p>로그인</p>
                             <br>
-                            <img src="../../IMG/information/wifi/img_cabin_wifi_05.png" alt="">
+                            <img src="<%=path%>/Resources/IMG/information/wifi/img_cabin_wifi_05.png" alt="">
                             <br>
                             <br>
                             <div>
@@ -114,7 +107,7 @@
                             <div class="number-wrapper">06</div>
                             <p>요금결제</p>
                             <br>
-                            <img src="../../IMG/information/wifi/img_cabin_wifi_06.png" alt="">
+                            <img src="<%=path%>/Resources/IMG/information/wifi/img_cabin_wifi_06.png" alt="">
                             <br>
                             <br>
                             <div>
