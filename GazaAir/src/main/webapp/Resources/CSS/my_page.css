@@ -22,6 +22,7 @@
 }
 .maintop a { text-decoration: none; }
 .maintop>.row>div { padding: 100px 100px 0; }
+.maintop>.row>#nameDiv { padding: 100px 100px 0 0; }
 .maintop>.row>div>div { min-width: 125px; }
 .maintop>.row>div>div:first-of-type { font-size: 180% }
 .maintop>.row>div:first-of-type { float: left; }

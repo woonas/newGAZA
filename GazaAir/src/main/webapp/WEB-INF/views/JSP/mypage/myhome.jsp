@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <title>마이 홈</title>
-        <link rel="stylesheet" href="../../CSS/my_page.css">
+        <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/my_page.css">
         <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/navNfooter.css" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
@@ -16,7 +16,7 @@
        <section class="content">
             <div class="maintop">
                 <div class="row clearfix">
-                    <div>
+                    <div id="nameDiv">
                         <div id="name-ko"><a href="#" class="font-white">홍길동 님</a></div>
                         <div id="name-eng" class="font-gray3">HONG GIL DONG</div>
                     </div>
@@ -231,11 +231,11 @@
         </section>
         <div style="height: 150px; background-color: #fff; clear:both;"></div>
         <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.1/dist/circle-progress.js"></script>
-        <script src="../../JS/common.js"></script>
+        <script src="<%=request.getContextPath() %>/Resources/JS/common.js"></script>
         <script type="text/javascript">
         	let my_mileage = ${myMiles};
         </script>
-        <script src="../../JS/mypage.js"></script>
+        <script src="<%=request.getContextPath() %>/Resources/JS/mypage.js"></script>
         <%@ include file="../common/footer.jspf" %>
     </body>
 </html>
