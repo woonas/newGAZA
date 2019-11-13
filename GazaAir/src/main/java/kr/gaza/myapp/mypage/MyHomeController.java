@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class MyhomeController {
+public class MyHomeController {
 	@Autowired
 	SqlSession sqlSession;
 	@RequestMapping(value="/JSP/mypage/myhome",method=RequestMethod.GET)

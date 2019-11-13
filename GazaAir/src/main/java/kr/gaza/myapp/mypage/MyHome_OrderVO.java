@@ -1,4 +1,4 @@
-package kr.gaza.mypage;
+package kr.gaza.myapp.mypage;
 
 public class MyHome_OrderVO {
 	private String flightDate;

@@ -1,4 +1,4 @@
-package kr.gaza.mypage;
+package kr.gaza.myapp.mypage;
 
 
 import kr.gaza.home.DBConn;
@@ -19,7 +19,7 @@ public class MyHomeDAO extends DBConn implements MyHomeInterface{
 				vo.setMemberNameEng(rs.getString(2));
 				vo.setMemberFlightCnt(rs.getInt(3));
 			}
-			//���ϸ���
+			//占쏙옙占싹몌옙占쏙옙
 			sql = "select sum(a.point) from miles a join mymiles b on a.milesnum = b.milesnum where b.membernum=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, vo.getMemberNum());
@@ -28,7 +28,7 @@ public class MyHomeDAO extends DBConn implements MyHomeInterface{
 				vo.setMyMileage(rs.getInt(1));
 			}
 			
-			//���
+			//占쏙옙占�
 			int rownum=0;
 			sql = "select rownum, gradetype from grade where needMiles<=? order by needMiles";
 			pstmt = conn.prepareStatement(sql);
@@ -39,7 +39,7 @@ public class MyHomeDAO extends DBConn implements MyHomeInterface{
 				rownum = rs.getInt(1);
 			}
 			
-			//�ʿ�����Ʈ
+			//占십울옙占쏙옙占쏙옙트
 			sql = "select needMiles from grade";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();

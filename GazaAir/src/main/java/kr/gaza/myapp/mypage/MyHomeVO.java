@@ -1,4 +1,4 @@
-package kr.gaza.mypage;
+package kr.gaza.myapp.mypage;
 
 public class MyHomeVO {
 	private int memberNum;
@@ -6,7 +6,7 @@ public class MyHomeVO {
 	private String memberNameEng;
 	private String memberGrade;
 	private int memberFlightCnt;
-	private int myMileage; // ��밡�ɸ��ϸ���
+	private int myMileage; // 占쏙옙諛∽옙占쏙옙玖占쏙옙占�
 	private int needMileage;
 	
 	
@@ -17,7 +17,7 @@ public class MyHomeVO {
 	public void setNeedMileage(int needMileage) {
 		this.needMileage = needMileage;
 	}
-	private int favoriteCnt; // ���ɳ뼱����
+	private int favoriteCnt; // 占쏙옙占심노선占쏙옙占쏙옙
 	
 	
 	

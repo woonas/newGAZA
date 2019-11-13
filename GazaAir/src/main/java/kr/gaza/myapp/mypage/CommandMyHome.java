@@ -1,4 +1,4 @@
-package kr.gaza.mypage;
+package kr.gaza.myapp.mypage;
 
 import java.io.IOException;
 

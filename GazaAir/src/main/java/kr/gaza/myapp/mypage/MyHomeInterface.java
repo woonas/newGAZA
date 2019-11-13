@@ -1,9 +1,9 @@
-package kr.gaza.mypage;
+package kr.gaza.myapp.mypage;
 
 
 public interface MyHomeInterface {
-	//����Ȩ �̸�,���,���ϸ���,����ʿ� ���ϸ���
+	//占쏙옙占쏙옙홈 占싱몌옙,占쏙옙占�,占쏙옙占싹몌옙占쏙옙,占쏙옙占쏙옙却占� 占쏙옙占싹몌옙占쏙옙
 	public MyHomeVO memberRecord(int memberNum);
-	//����
+	//占쏙옙占쏙옙
 	
 }
