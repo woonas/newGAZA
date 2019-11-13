@@ -19,7 +19,7 @@
 					<div><a href="#">고객서비스</a></div>
 					<div>
                         <c:if test="${memberName==null }">
-                            <a href="<%=path %>/Resources/JSP/account/login/login.do">로그인</a>
+                            <a href="JSP/account/login/loginView">로그인</a>
                         </c:if>
                         <c:if test="${memberName!=null }">
                             <a href="<%=path %>/Resources/JSP/mypage/myhome.do">마이홈</a>

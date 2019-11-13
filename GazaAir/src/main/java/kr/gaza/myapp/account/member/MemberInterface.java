@@ -1,26 +1,26 @@
-package kr.gaza.account;
+package kr.gaza.myapp.account.member;
 
 public interface MemberInterface {
 
-    boolean idCheck(String userId);
+	public boolean idCheck(String userId);
 
-    int insertRecord(MemberVO vo);
+	public int insertRecord(MemberVO vo);
 
-    void login(MemberVO vo);
+	public MemberVO login(MemberVO vo);
 
-    void getMember(MemberVO vo);
+	public void getMember(MemberVO vo);
 
-    int updateRecord(MemberVO vo);
+	public int updateRecord(MemberVO vo);
 
-    int updatePassword(String memberId, String oldPwd, String newPwd);
+	public int updatePassword(String memberId, String oldPwd, String newPwd);
 
-    int delAccount(String id, String pwd);
+	public int delAccount(String id, String pwd);
 
-    String findId(MemberVO vo);
+	public String findId(MemberVO vo);
 
-    String findPw(MemberVO vo);
+	public String findPw(MemberVO vo);
 
-    void verification(MemberVO vo);
+	public void verification(MemberVO vo);
 
-    String ipinCheck(boolean lookingForId, String id, String pw);
+	public String ipinCheck(boolean lookingForId, String id, String pw);
 }

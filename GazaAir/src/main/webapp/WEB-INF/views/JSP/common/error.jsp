@@ -65,7 +65,7 @@
 </script>
 </head>
 <body>
-<%@ include file="/Resources/JSP/common/nav.jspf" %>
+<%@ include file="nav.jspf" %>
 <section>
 	<div id="content">
 		<div class="row clearfix">
@@ -100,6 +100,6 @@
 		</div>
 	</div>
 </section>
-<%@ include file="/Resources/JSP/common/footer.jspf" %>
+<%@ include file="footer.jspf" %>
 </body>
 </html>

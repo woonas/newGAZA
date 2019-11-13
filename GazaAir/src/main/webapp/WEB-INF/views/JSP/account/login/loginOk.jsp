@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:if test="${status }">
 	<script>
-		location.href= "<%=request.getContextPath() %>/index.do";
+		location.href= "<%=request.getContextPath() %>/";
 	</script>
 </c:if>
 <c:if test="${!status }">

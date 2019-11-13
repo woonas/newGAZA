@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <title>로그인</title>
-        <link rel="stylesheet" href="../../../CSS/account.css">
+        <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/account.css">
 
         <!-- Font Awesome CDN -->
         <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
@@ -93,12 +93,12 @@
 
                    <div class="form-box">
                        <div id="tab-1-container">
-                           <form action="<%=path %>/Resources/JSP/login/loginOk.do" method="post">
+                           <form action="loginOk" method="post">
                                <div>
-                                   <input type="text" name="userid" id="userid" required placeholder="아이디">
+                                   <input type="text" name="memberId" id="userid" required placeholder="아이디">
                                </div>
                                <div>
-                                   <input type="password" name="password" id="password" required placeholder="비밀번호">
+                                   <input type="password" name="memberPwd" id="password" required placeholder="비밀번호">
                                </div>
                                <div class="remember-wrap">
                                    <input type="checkbox" id="remember" class="checkbox3" checked>
@@ -157,7 +157,6 @@
         <link rel="stylesheet" href="<%=path %>/Vendor/javascript-datepicker-lightpick/css/lightpick.css">
         <!-- Lightpick JS -->
         <script src="<%=path %>/Vendor/javascript-datepicker-lightpick/js/lightpick.js"></script>
-        <script src="<%=path %>/Resources/JS/common.js"></script>
         <script src="<%=path %>/Resources/JS/airportpicker.js"></script>
         <script src="<%=path %>/Resources/JS/account.js"></script>
        

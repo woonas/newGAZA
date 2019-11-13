@@ -1,4 +1,4 @@
-package kr.gaza.account;
+package kr.gaza.myapp.account.member;
 
 public class MemberVO {
 	private int memberNum;
