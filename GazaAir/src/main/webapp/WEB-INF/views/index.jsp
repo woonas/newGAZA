@@ -113,7 +113,7 @@
 	                            </div>
 	                            <div class="textBox">
 	                                <div>
-	                                    <h5>FUN한 동남아 여행</h5>
+	                                    <h5>FUN한 동남아 여행!</h5>
 	                                    <div>뻔한 여행 말고 FUN한 동남아 여행, A380타고 동남아 가자!</div>
 	                                    <h6>더 보기<img src="<%=path %>/Resources/IMG/icon/ico_arrow_gray.png"/></h6>
 	                                </div>
