@@ -1,4 +1,4 @@
------airplane---------------------------------------------------------------------------
+﻿-----airplane---------------------------------------------------------------------------
 select * from airplane;
 INSERT INTO airplane VALUES(airplane_sq.nextval, 'GZ777',250);
 INSERT INTO airplane VALUES(airplane_sq.nextval, 'GZ815',250);
@@ -466,15 +466,26 @@ INSERT INTO food VALUES(food_sq.nextval,'간단식','햄치즈베이글','/Resou
 
 ----order---------------------------------------------------------------------------
 select * from ordertbl;
-
+INSERT INTO ordertbl VALUES(ordertbl_sq.nextval);
+INSERT INTO ordertbl VALUES(ordertbl_sq.nextval);
+INSERT INTO ordertbl VALUES(ordertbl_sq.nextval);
+INSERT INTO ordertbl VALUES(ordertbl_sq.nextval);
 
 
 
 ----payment---------------------------------------------------------------------------
 select * from payment;
-INSERT INTO payment VALUES(payment_sq.nextval,1,1,1,0,1500000,sysdate);
-INSERT INTO payment VALUES(payment_sq.nextval,1,1,1,1,350000,sysdate);
-INSERT INTO payment VALUES(payment_sq.nextval,1,1,1,1,750000,sysdate);
+INSERT INTO payment VALUES(payment_sq.nextval,1,3841,1,0,1500000,sysdate);
+INSERT INTO payment VALUES(payment_sq.nextval,1,3841,2,0,2500000,sysdate);
+INSERT INTO payment VALUES(payment_sq.nextval,1,7777,1,1,350000,sysdate);
+INSERT INTO payment VALUES(payment_sq.nextval,1,8888,1,1,750000,sysdate);
+
+----orderedFlight---------------------------------------------------------------------------
+select * from orderedFlight;
+INSERT INTO orderedFlight VALUES(orderedFlight_sq.nextval,1,1,1,1,0000);
+INSERT INTO orderedFlight VALUES(orderedFlight_sq.nextval,1,1,1,1,9999);
+INSERT INTO orderedFlight VALUES(orderedFlight_sq.nextval,1,1,1,1,8888);
+INSERT INTO orderedFlight VALUES(orderedFlight_sq.nextval,1,1,1,1,7777);
 
 ----account---------------------------------------------------------------------------
 select * from account;
