@@ -190,8 +190,9 @@ const agreement_check = () => {
     }
 
     /* signup3 */
-    else if(location.pathname.indexOf('signup3') !== -1)
-        verification();
+    else if(location.pathname.indexOf('signup3') !== -1){
+    	verification();
+    }
 
     /* signup4 */
     else if(location.pathname.indexOf('signup4') !== -1) {
@@ -285,7 +286,7 @@ const agreement_check = () => {
         }
         document.getElementById('search').addEventListener('click', search);
 
-        function verification(targetForm) {
+        function idFinder(targetForm) {
             var params = $(targetForm).serialize();
             $.ajax({
                 url : "<%=request.getContextPath() %>/Resources/JSP/account/search/verificationOk.do",

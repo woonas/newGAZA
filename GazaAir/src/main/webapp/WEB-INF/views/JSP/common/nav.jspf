@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%
-	String path = request.getContextPath();
-%>
+
 <header id="header">
 	<nav>
 		<div id="mainMenu">
@@ -55,12 +53,12 @@
 							</ul>
 							<ul>
 								<c:if test="${memberName==null }">
-								    <li><a href="<%=path %>/Resources/JSP/account/signup/signup1.do">회원가입</a></li>
+								    <li><a href="JSP/account/signup/signup1">회원가입</a></li>
 								</c:if>
 								<c:if test="${memberName!=null }">
                                     <li><a href="<%=path %>/Resources/JSP/mypage/account_info.do">회원정보</a></li>
                                     <li><a href="<%=path %>/Resources/HTML/reserveStatus.html">예약 현황</a></li>
-                                    <li><a href="<%=path %>/Resources/JSP/account/login/logout.do">로그아웃</a></li>
+                                    <li><a href="JSP/account/login/logout">로그아웃</a></li>
                                     <li><a href="<%=path %>/Resources/JSP/mypage/account_delete.do">회원탈퇴</a></li>
 								</c:if>
 							</ul>

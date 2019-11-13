@@ -203,13 +203,13 @@ $(function(){
                 overlay.style.display = 'block';
                 setTimeout(function () {
                     document.querySelector('.reserve_wrap').classList.add('active');
-                }, 20);
+                }, 50);
             },
             onClose: function() {
                 overlay.style.display = 'none';
                 setTimeout(function () {
                     document.querySelector('.reserve_wrap').classList.add('active');
-                }, 20);
+                }, 50);
             }
         });
     };

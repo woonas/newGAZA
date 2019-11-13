@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입 - 회원 유형 선택</title>
-    <link rel="stylesheet" href="../../../CSS/account.css">
+    <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/account.css">
 	
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
@@ -30,14 +30,14 @@
                     <div>
                         <div class="tab-title">한국국가/지역</div>
                         <div class="tab-txt">한국국적 대한민국 거주자</div>
-                        <a href="<%=path %>/Resources/JSP/account/signup/signup2.do"><button type="button" class="blueBtn" title="한국국적, 대한민국 거주자" id="btn-korea">선택하기</button></a>
+                        <a href="signup2"><button type="button" class="blueBtn" title="한국국적, 대한민국 거주자" id="btn-korea">선택하기</button></a>
                     </div>
                 </li>
                 <li class="li-foreign">
                     <div>
                         <div class="tab-title">외국국가/지역</div>
                         <div class="tab-txt">해외 국적자, 해외거주 한국인</div>
-                        <a href="<%=path %>/Resources/JSP/account/signup/signup2.do"><button type="button" class="blueBtn" title="해외 국적, 해외국적 한국인" id="btn-foreign">선택하기</button> </a>
+                        <a href="signup2"><button type="button" class="blueBtn" title="해외 국적, 해외국적 한국인" id="btn-foreign">선택하기</button> </a>
                     </div>
                 </li>
             </ul>

@@ -44,4 +44,9 @@ public class LoginController {
 	    
 	    return mav;
 	}
+	//·Î±×¾Æ¿ô
+	@RequestMapping("/JSP/account/login/logout")
+	public String logOut() {
+		return "JSP/account/login/logout";
+	}
 }

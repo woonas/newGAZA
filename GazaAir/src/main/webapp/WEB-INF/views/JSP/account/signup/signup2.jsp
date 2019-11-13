@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>회원가입 - 약관동의</title>
-        <link rel="stylesheet" href="../../../CSS/account.css">
+        <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/account.css">
         <!-- Font Awesome CDN -->
         <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
@@ -16,7 +16,7 @@
         <div class="overlay"></div>
         <%@ include file="../../common/nav.jspf" %>
         <section class="content">
-            <form method="post" action="<%=path %>/Resources/JSP/account/signup/signup3.do" onsubmit="return agreement_check()">
+            <form method="post" action="signup3" onsubmit="return agreement_check()">
                 <h3>회원가입</h3>
                 <p>회원으로 가입하시면, 예약, 발권, 탑승, 마일리지 조회 등 다양한 서비스와 함께<br>정기 이벤트 뉴스와 할인항공권 소식을 이메일로 받아보실 수도 있습니다.</p>
                 <ol class="step">
@@ -383,7 +383,7 @@
                 </div>
                 
                 <div class="flex">
-                    <a href="<%=path %>/Resources/JSP/account/signup/signup1.do"><button class="whiteBtn left">&lt; 이전</button></a>
+                    <a href="signup1"><button class="whiteBtn left">&lt; 이전</button></a>
                     <input type="submit" class="right blueBtn" value="다음 &gt;"/>
                 </div>
             </form>

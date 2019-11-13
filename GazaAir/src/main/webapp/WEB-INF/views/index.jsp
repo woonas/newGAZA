@@ -6,22 +6,22 @@
         <meta charset="UTF-8">
         <title>가자에어 메인</title>
         <!-- css -->
-        <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/index.css" type="text/css"/>
+        <link rel="stylesheet" href="<%=path %>/Resources/CSS/index.css" type="text/css"/>
         <!-- Lightpick CSS -->
-        <link rel="stylesheet" href="<%=request.getContextPath() %>/Vendor/javascript-datepicker-lightpick/css/lightpick.css">
+        <link rel="stylesheet" href="<%=path %>/Vendor/javascript-datepicker-lightpick/css/lightpick.css">
         <!-- jqery js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- image Slide Js -->
-        <script src="<%=request.getContextPath() %>/Resources/JS/index.js"></script>
-        <script src="<%=request.getContextPath() %>/Vendor/backstretch/jquery.backstretch.min.js"></script>
-        <script src="<%=request.getContextPath() %>/Vendor/bxSlider/jquery.bxslider.min.js"></script>
-        <link href="<%=request.getContextPath() %>/Vendor/bxSlider/jquery.bxslider.css" rel="stylesheet" />
+        <script src="<%=path %>/Resources/JS/index.js"></script>
+        <script src="<%=path %>/Vendor/backstretch/jquery.backstretch.min.js"></script>
+        <script src="<%=path %>/Vendor/bxSlider/jquery.bxslider.min.js"></script>
+        <link href="<%=path %>/Vendor/bxSlider/jquery.bxslider.css" rel="stylesheet" />
         <!-- fontawesome Js -->
         <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
         <!-- Moment Js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
         <!-- Lightpick JS -->
-        <script src="<%=request.getContextPath() %>/Vendor/javascript-datepicker-lightpick/js/lightpick.js"></script>
+        <script src="<%=path %>/Vendor/javascript-datepicker-lightpick/js/lightpick.js"></script>
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>

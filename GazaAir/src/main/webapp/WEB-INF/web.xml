@@ -83,4 +83,10 @@
 	    <error-code>405</error-code>
 	    <location>/JSP/common/error.jsp</location>
 	</error-page>
+	<jsp-config>
+		<jsp-property-group>
+			 <url-pattern>/WEB-INF/views/*</url-pattern>
+			 <include-prelude>/WEB-INF/views/JSP/common/variables.jspf</include-prelude>
+		</jsp-property-group>
+	 </jsp-config>
 </web-app>
