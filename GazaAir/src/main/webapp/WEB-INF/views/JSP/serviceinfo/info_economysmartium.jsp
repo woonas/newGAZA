@@ -24,7 +24,7 @@
                 <a href=""><input type="button" class="blueBtn" id="purchase_list" value="서비스 신청/ 구매내역 확인 페이지 이동"></a>
             </div>
             <br>
-            <img src="<%=path%>/Resources/IMG/information/legroom.jpeg" alt="">
+            <img src="<%=path%>/Resources/IMG/information/economystadium.png" alt="">
             <p class="section-title">구매 운임(편도 기준)</p>
             <p>이코노미 스마티움 좌석 구매일 기준 2019.1.25 이후</p>
             <table class="table-list">
