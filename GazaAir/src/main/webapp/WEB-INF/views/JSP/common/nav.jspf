@@ -17,7 +17,7 @@
 					<div><a href="#">고객서비스</a></div>
 					<div>
                         <c:if test="${memberName==null }">
-                            <a href="JSP/account/login/loginView">로그인</a>
+                            <a href="/myapp/JSP/account/login/loginView">로그인</a>
                         </c:if>
                         <c:if test="${memberName!=null }">
                             <a href="<%=path %>/Resources/JSP/mypage/myhome.do">마이홈</a>
@@ -53,7 +53,7 @@
 							</ul>
 							<ul>
 								<c:if test="${memberName==null }">
-								    <li><a href="JSP/account/signup/signup1">회원가입</a></li>
+								    <li><a href="<%=jsp %>/account/signup/signup1">회원가입</a></li>
 								</c:if>
 								<c:if test="${memberName!=null }">
                                     <li><a href="<%=path %>/Resources/JSP/mypage/account_info.do">회원정보</a></li>

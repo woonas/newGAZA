@@ -31,7 +31,9 @@ public class MemberVO {
 	private String directronic;
 	private String dr1;
 	private String dr2;
+	private int flightCnt;
 	private String regdate;
+	
 	public int getMemberNum() {
 		return memberNum;
 	}
@@ -234,6 +236,12 @@ public class MemberVO {
 	}
 	public void setDr2(String dr2) {
 		this.dr2 = dr2;
+	}
+	public int getFlightCnt() {
+		return flightCnt;
+	}
+	public void setFlightCnt(int flightCnt) {
+		this.flightCnt = flightCnt;
 	}
 	
 	

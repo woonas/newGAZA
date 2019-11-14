@@ -6,4 +6,13 @@
 	<select id="login" resultType="kr.gaza.myapp.account.member.MemberVO">
 		select memberNum, memberNameKor, memberId from member where memberid=#{memberId} and memberpwd=#{memberPwd}
 	</select>
+	<insert id="insertRecord" parameterType="kr.gaza.myapp.account.member.MemberVO">
+		insert into member(memberNum, memberId, memberPwd, memberNameKor, memberNameEng, nation, gender, tel, altTel, 
+		zipcode, addr, detailaddr, email, birthday, agree, directronic, filghtCnt, regdate) 
+		values(member_sq.nextVal, #{memberId}, #{memberPwd}, #{memberNameKor}, #{memberNameEng}, #{nation}, #{gender}, #{tel},
+		 #{altTel}, #{zipcode}, #{addr}, #{detailAddr}, #{email}, #{birthday}, #{agree}, #{directronic}, 0, sysdate)
+	</insert>
+	<select id="idCheck" parameterType="String" resultType="boolean">
+		select count(memberId) from member where memberId=#{id}
+	</select>
 </mapper>

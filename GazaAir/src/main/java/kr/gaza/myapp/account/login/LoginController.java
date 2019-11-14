@@ -27,7 +27,7 @@ public class LoginController {
 	@RequestMapping(value="/JSP/account/login/loginOk", method=RequestMethod.POST)
 	public ModelAndView loginOk(MemberVO vo1, HttpServletRequest req) {
 		MemberInterface dao = sqlSession.getMapper(MemberInterface.class);
-		MemberVO  vo = dao.login(vo1);
+		MemberVO vo = dao.login(vo1);
 		
 		ModelAndView mav = new ModelAndView();
 		boolean status = false;
