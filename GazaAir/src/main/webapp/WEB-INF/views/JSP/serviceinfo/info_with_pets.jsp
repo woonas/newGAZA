@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>반려동물 동반</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
+        <link rel="stylesheet" href="../../CSS/information.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>
@@ -14,7 +14,7 @@
         <section class="content">
             <h3>반려동물 동반</h3>
             <div class="info-banner">
-                    <div class="banner-pet-1">
+                    <div class="banner-fare-2">
                         <div>
                             <p>반려동물과 함께 항공여행 계획 중인 고객께서는 신청방법,<br/>반려동물 가이드를 사전에 꼭 확인해 주시기 바랍니다. </p>
                         </div>
@@ -135,6 +135,6 @@
             </div>
 	</section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="<%=path %>/Resources/JS/information.js"></script>
+        <script src="../../JS/information.js"></script>
     </body>
 </html>

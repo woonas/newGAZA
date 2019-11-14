@@ -10,7 +10,7 @@
         <c:if test="${cnt<=0 }">
             <title>회원가입 - 회원가입실패</title>
         </c:if>
-        <link rel="stylesheet" href="<%=css %>/account.css">
+        <link rel="stylesheet" href="../../../CSS/account.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>

@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>회원가입 - 본인인증</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/account.css">
+        <link rel="stylesheet" href="<%=request.getContextPath() %>/Resources/CSS/account.css">
         <!-- Font Awesome CDN -->
         <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
@@ -167,7 +167,7 @@
                             <div>유효시간 &nbsp;&nbsp;<span class="font-red" id="timer">6 : 00</span></div>
                         </div>
                     </div>
-                    <form method="post" action="signup4" id="authorize">
+                    <form method="get" action="signup4" id="authorize">
 	                    <input type="button" class="blueBtn full-line" value="확인" id="authorizeBtn">
                     </form>    
                 </div>
@@ -188,13 +188,13 @@
 	                <input type="text" id="ipin-test">
 	                <input type="button" value="닫기" class='btn-close'>
                     <form method="get" action="signup4" id="authorize2">
-	                    <input type="button" id="authorizeBtn2">
+	                
                     </form>
                 <div class="success">
                     <h2>인증이 완료 되었습니다!</h2>
                     <p>회원가입을 계속 진행해주세요.</p>
                 </div>
-            </div>			
+            </div>
             <ul class="list-type2">
                 <li> 회원님의 소중한 개인 정보 보호를 위하여 본인 확인이 필요합니다. (본인 인증은 NICE 신용평가정보를 통해 진행됩니다.)</li>
                 <li> 타인의 정보 및 주민등록번호를 도용하여 가입하는 경우 3년 이하의 징역 또는 1천 만원 이하의 벌금에 처해지게 됩니다. 반드시 본인의 정보를 이용하여 가입해주시기 바랍니다.</li>

@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>임신 중 여행</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
+        <link rel="stylesheet" href="../../CSS/information.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>
@@ -14,7 +14,7 @@
         <section class="content">
             <h3>임신 중 여행</h3>
             <div class="info-banner">
-                    <div class="banner-pregnant-1">
+                    <div class="banner-fare-2">
                         <div>
                             <p>아시아나항공에서는 임신부 고객께서 편안하고<br/>안전한 여행이 될 수 있도록 세심한 서비스로 모십니다.<br/>뱃 속의 아기와 함께 더욱 편안한 여행이 되세요. </p>
                         </div>
@@ -97,6 +97,6 @@
             
 	</section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="<%=path %>/Resources/JS/information.js"></script>
+        <script src="../../JS/information.js"></script>
     </body>
 </html>

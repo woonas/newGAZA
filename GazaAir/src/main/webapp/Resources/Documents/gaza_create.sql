@@ -1,4 +1,4 @@
-﻿--특수문자 사용하기
+--특수문자 사용하기
 set define off;
 
 --시퀀스
@@ -35,10 +35,6 @@ START WITH 1
 INCREMENT BY 1;
 
 CREATE SEQUENCE ordertbl_sq
-START WITH 1
-INCREMENT BY 1;
-
-CREATE SEQUENCE orderedflight_sq
 START WITH 1
 INCREMENT BY 1;
 
