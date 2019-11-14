@@ -6,18 +6,18 @@
         <meta charset="UTF-8">
         <title>회원가입 - 회원정보입력</title>
 <!--        bootstrap validator-->
-        <link rel="stylesheet" href="<%=path %>/Vendor/bootstrap/css/bootstrap.css"/>
-        <link rel="stylesheet" href="<%=path %>/Vendor/bootstrapValidator/bootstrapValidator.css"/>
+        <link rel="stylesheet" href="../../../../Vendor/bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="../../../../Vendor/bootstrapValidator/bootstrapValidator.css"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<%=path %>/Vendor/bootstrapValidator/bootstrapValidator.js"></script>
+        <script type="text/javascript" src="../../../../Vendor/bootstrapValidator/bootstrapValidator.js"></script>
 <!--        countrypicker-->
-        <link rel="stylesheet" href="<%=path %>/Vendor/Filterable-Country-Picker-niceCountryInput/niceCountryInput.css">
-        <script src="<%=path %>/Vendor/Filterable-Country-Picker-niceCountryInput/niceCountryInput.js"></script>
+        <link rel="stylesheet" href="../../../../Vendor/Filterable-Country-Picker-niceCountryInput/niceCountryInput.css">
+        <script src="../../../../Vendor/Filterable-Country-Picker-niceCountryInput/niceCountryInput.js"></script>
 <!-- Font Awesome CDN -->
         <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/account.css">
+        <link rel="stylesheet" href="../../../../Resources/CSS/account.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
 <!-- 다음/카카오 주소검색 -->         
         <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
@@ -25,9 +25,9 @@
 <!-- Moment Js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <!-- Lightpick CSS -->
-        <link rel="stylesheet" href="<%=path %>/Vendor/javascript-datepicker-lightpick/css/lightpick.css">
+        <link rel="stylesheet" href="../../../../Vendor/javascript-datepicker-lightpick/css/lightpick.css">
 <!-- Lightpick JS -->
-        <script src="<%=path %>/Vendor/javascript-datepicker-lightpick/js/lightpick.js"></script>
+        <script src="../../../../Vendor/javascript-datepicker-lightpick/js/lightpick.js"></script>
     </head>
      <body id="personalInfo">
         <div class="overlay"></div>
@@ -44,27 +44,27 @@
             </ol>
             
             <div class="form-wrapper">
-                <form id="defaultForm" method="post" action="signup5" class="form-horizontal">
+                <form id="defaultForm" method="post" action="<%=path %>/Resources/JSP/account/signup/signup5.do" class="form-horizontal">
                     <fieldset>
                         <legend>회원 정보 입력</legend>
 
                         <div class="form-group">
                             <label class="col-fifth control-label">이름 (한글명)</label>
                             <div class="col-xs-3">
-                                <input type="text" class="form-control" name="firstNameKor" placeholder="성" required data-bv-notempty-message="성을 입력해주십시오!">
+                                <input type="text" class="form-control" name="firstNameKo" placeholder="성" required data-bv-notempty-message="성을 입력해주십시오!">
                             </div>
                             <div class="col-xs-3">
-                                <input type="text" class="form-control" name="lastNameKor" placeholder="이름" required data-bv-notempty-message="이름을 입력해주십시오!">
+                                <input type="text" class="form-control" name="lastNameKo" placeholder="이름" required data-bv-notempty-message="이름을 입력해주십시오!">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-fifth control-label">이름 (영문명)</label>
                             <div class="col-xs-3">
-                                <input type="text" class="form-control" name="firstNameEng" placeholder="성" required data-bv-notempty-message="성을 입력해주십시오!">
+                                <input type="text" class="form-control" name="firstNameEn" placeholder="성" required data-bv-notempty-message="성을 입력해주십시오!">
                             </div>
                             <div class="col-xs-3">
-                                <input type="text" class="form-control" name="lastNameEng" placeholder="이름" required data-bv-notempty-message="이름을 입력해주십시오!">
+                                <input type="text" class="form-control" name="lastNameEn" placeholder="이름" required data-bv-notempty-message="이름을 입력해주십시오!">
                             </div>
                         </div>
                         
@@ -85,7 +85,7 @@
                         <div class="form-group">
                             <label class="col-fifth control-label">생년월일</label>
                             <div class="col-xs-4">
-                                <input type="text" class="form-control" id='birthdate' name="birthDay" placeholder="2000/01/01" required data-bv-notempty-message="생일을 입력해십시오." readonly>
+                                <input type="text" class="form-control" id='birthdate' name="birthdate" placeholder="2000/01/01" required data-bv-notempty-message="생일을 입력해십시오." readonly>
                             </div>
                         </div>
                        
@@ -100,14 +100,14 @@
                                  data-onchangecallback="onChangeCallback">
                             </div>
                             <div class="col-xs-4 country-mark">
-                                <input type="text" class="form-control invisible" id="country" name="nation"  value="South Korea (대한민국)" readonly required>
+                                <input type="text" class="form-control invisible" id="country" name="country"  value="South Korea (대한민국)" readonly required>
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <label class="col-fifth control-label">아이디</label>
                             <div class="col-xs-4">
-                                <input type="text" class="form-control" name="username" id="memberId" required placeholder="영문+숫자 6~15자리" onkeypress="inputTypeCheck()">
+                                <input type="text" class="form-control" name="username" id="username" required placeholder="영문+숫자 6~15자리" onkeypress="inputTypeCheck()">
                             </div>
                             <div>
                                 <input type="button" value="중복체크" class="blueBtn" id="btn-dupCheck">
@@ -117,7 +117,7 @@
                         <div class="form-group">
                             <label class="col-fifth control-label">비밀번호</label>
                             <div class="col-xs-4">
-                                <input type="password" class="form-control" required placeholder="영문+숫자+특수문자 8~20자리" name="memberPwd">
+                                <input type="password" class="form-control" required placeholder="영문+숫자+특수문자 8~20자리" name="password">
                             </div>
                         </div>
 
@@ -139,15 +139,15 @@
                             <label class="col-fifth control-label">휴대전화</label>
                             <div class="multi-input">
                                <div class="col-xs-2">
-                                   <input type="number" class="form-control" name="t1" placeholder="010" maxlength="3" oninput="maxLengthCheck(this)" required>
+                                   <input type="number" class="form-control" name="phone1" placeholder="010" maxlength="3" oninput="maxLengthCheck(this)" required>
                                 </div>
                                 <span>ㅡ</span>
                                 <div class="col-xs-2">
-                                    <input type="number" class="form-control" name="t2" placeholder="1234" maxlength="4" oninput="maxLengthCheck(this)" required>
+                                    <input type="number" class="form-control" name="phone2" placeholder="1234" maxlength="4" oninput="maxLengthCheck(this)" required>
                                 </div>
                                 <span>ㅡ</span>
                                 <div class="col-xs-2">
-                                    <input type="number" class="form-control" name="t3" placeholder="1234" maxlength="4" oninput="maxLengthCheck(this)" required>
+                                    <input type="number" class="form-control" name="phone3" placeholder="1234" maxlength="4" oninput="maxLengthCheck(this)" required>
                                 </div>
                             </div>
                         </div>
@@ -156,15 +156,15 @@
                             <label class="col-fifth control-label">유선전화(선택)</label>
                             <div class="multi-input">
                                 <div class="col-xs-2">
-                                    <input type="number" class="form-control" name="a1" maxlength="3" oninput="maxLengthCheck(this)" placeholder="02">
+                                    <input type="number" class="form-control" name="number1" maxlength="3" oninput="maxLengthCheck(this)" placeholder="02">
                                 </div>
                                 <span>ㅡ</span>
                                 <div class="col-xs-2">
-                                    <input type="number" class="form-control" name="a2" maxlength="4" oninput="maxLengthCheck(this)" placeholder="1234">
+                                    <input type="number" class="form-control" name="number2" maxlength="4" oninput="maxLengthCheck(this)" placeholder="1234">
                                 </div>
                                 <span>ㅡ</span>
                                 <div class="col-xs-2">
-                                    <input type="number" class="form-control" name="a3" maxlength="4" oninput="maxLengthCheck(this)" placeholder="1234">
+                                    <input type="number" class="form-control" name="number3" maxlength="4" oninput="maxLengthCheck(this)" placeholder="1234">
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                         <div class="form-group addr-wrapper">
                             <label class="col-fifth control-label">주소</label>
                             <div class="col-xs-2" style="margin-top: 5px;">
-                                <input type="number" class="form-control" name="zipcode" id="postalCode"
+                                <input type="number" class="form-control" name="postalCode" id="postalCode"
                                        placeholder="우편번호"  readonly>
                             </div>
                             <div style="margin-top: 5px;">
@@ -181,10 +181,10 @@
                             </div>
                             <div>
                                <div class="col-xs-5">
-                                    <input type="text" class="form-control" name="addr" id="addr1" placeholder="기본주소" required readonly>
+                                    <input type="text" class="form-control" name="addr1" id="addr1" placeholder="기본주소" required readonly>
                                 </div>
                                 <div class="col-xs-5">
-                                    <input type="text" class="form-control" name="detailAddr" id="addr2" placeholder="상세주소">
+                                    <input type="text" class="form-control" name="addr2" id="addr2" placeholder="상세주소">
                                 </div>
                             </div>
                         </div>
@@ -231,14 +231,14 @@
                     <h4>간편로그인 연결</h4>
                     <div class="row flex clearfix login-link">
                         <div>
-                            <img src="<%=img%>/logo/kakao.png" alt="">
+                            <img src="../../../IMG/logo/kakao.png" alt="">
                             카카오톡 <span>간편로그인</span></div>
                         <div id="facebook-logo">
-                            <img src="<%=img%>/logo/pngkey.com-facebook-logo-png-5311.png" alt="">
+                            <img src="../../../IMG/logo/pngkey.com-facebook-logo-png-5311.png" alt="">
                             페이스북 <span>간편로그인</span>
                         </div>
                         <div>
-                            <img src="<%=img%>/logo/naver-png-no-comments-200.png" alt="">
+                            <img src="../../../IMG/logo/naver-png-no-comments-200.png" alt="">
                             네이버 <span>간편로그인</span>
                         </div>
                     </div>

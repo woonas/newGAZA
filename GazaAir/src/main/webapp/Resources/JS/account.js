@@ -93,7 +93,7 @@ const verification = () => {
     $('#authorizeBtn2').click(function(){
         if(input_check(ipin_window + ' input[type="text"]')) {
             alert('모든 항목을 완료해주세요.');
-        } else if(document.getElementById('ipin-test').value !== '59469') {
+        } else if(document.getElementById('ipin-test').value !== '6369') {
             alert('잘못된 번호입니다.');
         } else {
             const _window = $(ipin_window);
@@ -213,14 +213,13 @@ const agreement_check = () => {
             document.querySelector('.result-wrapper').classList.add('hidden');
             insideId.value = id.value;
         });
-        var isOk="";
+
         document.getElementById('btn-dupCheck2').addEventListener('click', () => {
             if (insideId.value.length !== 0) {
-            		var params = "txtID="+$("#idChkFrm").val();
+            		var params = $("#idChkFrm").serialize();
             		/* Todo */
             		$.ajax({
-            			type: "get",
-            			url : "idChk",
+            			url : "/projectGAZA/Resources/JSP/account/signup/idChk.do",
             			data : params,
             			success : function(result){
             				if(eval(result)){
@@ -232,7 +231,6 @@ const agreement_check = () => {
             					target.innerHTML = `'${insideId.value}' <span class='font-gray1'>는 </span><span class='font-blue4'>사용할 수 있습니다.</span>`;
             					btnUse.removeAttribute("disabled");
             					btnUse.style.opacity = 1;
-            					isOk = eval(result);
             				}
             			},
             			error : function(){
@@ -249,8 +247,8 @@ const agreement_check = () => {
         });
 
         document.getElementById('btn-use').addEventListener('click', () => {
-            if(isOk.length === 0 || isOk == "true") alert('중복검사를 해주십시오.');
-            else {
+            if(isOk.length ===0) alert('중복검사를 해주십시오.');
+            else if(isOk === "사용할 수 있습니다.") {
                 id.value = insideId.value;
                 document.getElementById('btn-dupCheck-window').style.display = 'none';
                 document.querySelector('.overlay').style.display = 'none';
