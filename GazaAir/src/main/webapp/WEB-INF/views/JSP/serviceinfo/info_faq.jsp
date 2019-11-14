@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>자주 찾는 질문</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
+        <link rel="stylesheet" href="../../CSS/information.css">
         <script src="https://kit.fontawesome.com/9c923ac74a.js" crossorigin="anonymous"></script>
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
@@ -277,6 +277,6 @@
             </div>
         </section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="<%=path %>/Resources/JS/information.js"></script>
+        <script src="../../JS/information.js"></script>
     </body>
 </html>

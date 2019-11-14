@@ -41,8 +41,8 @@ const chatService = () => {
 
 (() => {
 
-    if (location.pathname.indexOf('faq') !== -1) {
-       const questions = document.querySelectorAll('.accordion-title');
+   if (location.pathname.indexOf('faq') !== -1) {
+        const questions = document.querySelectorAll('.accordion-title');
         questions.forEach(question => {
             question.addEventListener('click', () =>{
                 const expanded = document.querySelector('.is-expanded');
@@ -53,7 +53,7 @@ const chatService = () => {
                 }
             });
         });
-    }else {
+    } else {
        // 서비스안내에서 메인네비 하단줄 제거
        menuBorderRemover();
 
@@ -68,13 +68,6 @@ const chatService = () => {
 
        else if (location.pathname.indexOf('fare') !== -1) {
            tabEvent('.tab-menu1');
-       }else if (location.pathname.indexOf('infant') !== -1) {
-           tabEvent('.tab-menu1');
-       }else if (location.pathname.indexOf('medical') !== -1) {
-           tabEvent('.tab-menu1');
-       }else if (location.pathname.indexOf('baggage_free') !== -1) {
-           tabEvent('.tab-menu1');
        }
-       
    }
 })();

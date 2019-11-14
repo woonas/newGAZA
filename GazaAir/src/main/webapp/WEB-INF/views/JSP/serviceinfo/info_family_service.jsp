@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>패밀리 서비스</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
+        <link rel="stylesheet" href="../../CSS/information.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>
@@ -14,7 +14,7 @@
         <section class="content">
             <h3>패밀리 서비스</h3>
             <div class="info-banner">
-                    <div class="banner-family-1">
+                    <div class="banner-fare-2">
                         <div>
                             <p>7세 미만의 유아나 소아를 2명 이상 동반한 1인 손님,<br/>보호자 없이 여행하는 만 70세 이상의 노약자 손님은<br/>누구나 이용하실 수 있습니다.  </p>
                         </div>
@@ -69,6 +69,6 @@
             </div>
 	</section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="<%=path %>/Resources/JS/information.js"></script>
+        <script src="../../JS/information.js"></script>
     </body>
 </html>

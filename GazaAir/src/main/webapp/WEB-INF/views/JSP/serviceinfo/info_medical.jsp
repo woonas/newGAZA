@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>의료도움 안내</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
+        <link rel="stylesheet" href="../../CSS/information.css">
         <script>window.onbeforeunload = () => window.scrollTo(0, 0)</script>
     </head>
     <body>
@@ -23,7 +23,7 @@
 
             <div id="tab-1-container">
                 <div class="info-banner">
-                    <div class="banner-medical-1">
+                    <div class="banner-fare-1">
                         <div>
                             <p>아시아나항공은 의료 도움이 필요한 고객들에게<br/>안전한 여행을 위한 최상의 서비스를 제공해 드립니다. </p>
                         </div>
@@ -134,7 +134,7 @@
             	
             <div id="tab-2-container"  class="hidden">
                 <div class="info-banner">
-                    <div class="banner-medical-2">
+                    <div class="banner-fare-2">
                         <div>
                             <p>특별한 도움이 필요한 고객님의 안전하고 편안한 여행을 돕기위해<br/>
                             	아시아나항공에서는 다양한 서비스와 의료 장비로 고객을 정성껏 모시고 있습니다. </p>
@@ -208,6 +208,7 @@
             </div>
         </section>
         <%@ include file="../common/footer.jspf" %>
-        <script src="<%=path %>/Resources/JS/information.js"></script>
+        <script src="../../JS/common.js"></script>
+        <script src="../../JS/information.js"></script>
     </body>
 </html>

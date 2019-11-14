@@ -10,7 +10,7 @@
 <html>
     <head>
         <title>Title</title>
-        <link rel="stylesheet" href="<%=path %>/Resources/CSS/information.css">
+        <link rel="stylesheet" href="../../CSS/information.css">
     </head>
     <body>
         <div class="overlay"></div>
@@ -170,6 +170,7 @@
                 </div>
             </div>
         </section>
-        <script src="<%=path %>/Resources/JS/information.js"></script>
+        <script src="../../JS/common.js"></script>
+        <script src="../../JS/information.js"></script>
     </body>
 </html>
